@@ -15,14 +15,14 @@ app.use("/users", userRoutes);
 app.use("/communities", communityRoutes);
 
 app.use((req, res) => {
-  res
-    .status(404)
-    .send({
-      error: "Not Found",
-      message: `The requested endpoint was not found on this server.`,
-    });
+  res.status(404).send({
+    error: "Not Found",
+    message: `The requested endpoint was not found on this server.`,
+  });
 });
 
 app.listen(port, () => {
   console.log(`server is running on http://localhost:${port}`);
 });
+
+module.exports = app;
