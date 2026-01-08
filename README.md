@@ -12,3 +12,10 @@
 npm install
 npm start
 ```
+
+## How to Test
+
+```bash
+npm install
+npm test
+```
