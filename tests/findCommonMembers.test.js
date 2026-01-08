@@ -1,14 +1,14 @@
 const findCommonMembers = require("../utils/findCommonMembers");
 
-test("handles duplicate values correctly", () => {
+test("handles common values correctly", () => {
   expect(findCommonMembers([1, 2, 3], [2, 4])).toEqual([2]);
 });
 
-test("handles duplicate values correctly", () => {
+test("handles no common values correctly", () => {
   expect(findCommonMembers([1, 2], [3, 4])).toEqual([]);
 });
 
-test("handles duplicate values correctly", () => {
+test("handles empty arrays correctly", () => {
   expect(findCommonMembers([], [])).toEqual([]);
 });
 
