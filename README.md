@@ -19,3 +19,9 @@ npm start
 npm install
 npm test
 ```
+
+## Time Taken
+
+```bash
+53 minutes
+```
